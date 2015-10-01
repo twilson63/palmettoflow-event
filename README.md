@@ -56,6 +56,12 @@ var newEvent  = require('../').newEvent
 var testEvent = newEvent('beep', 'boop', { foo: 'bar'})
 ```
 
+### responseError(event, object) 
+
+``` js
+var responseError  = require('../').newEvent
+var re = responseError(event, { data: 'here'})
+```
 ## Why
 
 This is a helper module to reduce boilier plate code in palmetto flow. The palmetto flow `event` is consistent to enable core subscriptions services to understand all messages for logging, metrics, etc.  Sometimes you need to customize the event, but in times that you don't need to customize, you can reduce a lot of typing by using this helper function.

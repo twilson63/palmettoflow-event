@@ -24,3 +24,15 @@ exports.newEvent = function (subject, verb, object, actor) {
     dateSubmitted: moment().utc()
   }
 }
+
+exports.responseError = function (event, dataObject) {
+ return {
+    to: event.from,
+    from: event.to,
+    subject: event.subject + '-error',
+    verb: event.verb + '-error',
+    object: dataObject,
+    dateSubmitted: event.dateSubmitted,
+    duration: moment().diff(event.dateSubmitted)
+  } 
+}
