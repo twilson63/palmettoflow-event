@@ -1,5 +1,7 @@
 # PalmettoFlow Event
 
+[![Build Status](https://travis-ci.org/twilson63/palmettoflow-event.svg?branch=master)](https://travis-ci.org/twilson63/palmettoflow-event)
+
 This module provides a template to create a palmetto flow event, the event contains the following keys:
 
 Name | Type | Description
