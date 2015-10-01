@@ -21,7 +21,7 @@ exports.newEvent = function (subject, verb, object, actor) {
     verb: verb,
     object: object,
     actor: actor,
-    dateSubmitted: moment().utc()
+    dateSubmitted: moment().utc().format()
   }
 }
 
