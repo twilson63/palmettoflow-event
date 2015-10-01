@@ -1,0 +1,19 @@
+{
+  "name": "palmettoflow-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.10.6",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "tap": "^2.0.0"
+  }
+}
