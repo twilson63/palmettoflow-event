@@ -16,7 +16,7 @@ exports.response = function response(event, dataObject) {
 exports.newEvent = function (subject, verb, object, actor) {
   return {
     from: uuid.v4(),
-    to: `/${subject}/${verb}`,
+    to: '/' + [subject, verb].join('/'),
     subject: subject,
     verb: verb,
     object: object,
@@ -34,5 +34,5 @@ exports.responseError = function (event, dataObject) {
     object: dataObject,
     dateSubmitted: event.dateSubmitted,
     duration: moment().diff(event.dateSubmitted)
-  } 
+  }
 }
